@@ -1,0 +1,23 @@
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    padding: 20px 0 20px 30px;
+    color: $white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+
+    &--active {
+      background-color: $grey-light;
+      color: $navy-blue-link;
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.payment-info {
+
+
+  &__text {
+    color: $grey-text;
+    font-size: 16px;
+
+    &--black {
+      color: $black;
+    }
+  }
+  &__data {
+
+  }
+
+}
+.payment-data {
+  max-width: 290px;
+  padding-top: 45px;
+  padding-bottom: 35px;
+
+  &__table {
+    padding-top: 25px;
+  }
+  &__row {
+    display: flex;
+    padding-bottom: 12px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__col {
+    width: 50%;
+  }
+}

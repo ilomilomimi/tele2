@@ -1,0 +1,48 @@
+.bank-card-form {
+
+  &__row {
+    margin-bottom: 15px;
+  }
+  &__row-code {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__name {
+    padding-bottom: 5px;
+  }
+  &__input-row {
+    display: flex;
+  }
+  &__input {
+
+    &--small {
+      width: 65px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &--large {
+      width: 140px;
+    }
+  }
+  &__select-row {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  &__select-item-month {
+    position: relative;
+    width: 68px;
+    margin-right: 9px;
+  }
+
+  &__select-item-year {
+    position: relative;
+    width: 84px;
+  }
+
+
+}

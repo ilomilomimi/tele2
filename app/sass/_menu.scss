@@ -1,0 +1,30 @@
+.menu {
+  background-color: $grey;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175px;
+  }
+
+  &__item {
+    display: block;
+    background-color: $blue-item;
+    padding: 20px 0 20px 30px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: $grey-item;
+    transition: all ease-in-out .15s;
+
+    &--exit {
+      border-top: solid 2px #20232b;
+    }
+
+    &:hover {
+      opacity: 0.5;
+      transition: all ease-in-out .15s;
+    }
+  }
+}

@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400; }
+
+h1 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  line-height: 1.5; }
+
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0; }
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+
+a {
+  text-decoration: none; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../../app/fonts/Arial.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../app/fonts/OpenSans-Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+.page {
+  margin: 0 auto;
+  max-width: 964px; }
+  .page--card {
+    padding-top: 86px; }
+
+.logo {
+  display: block;
+  background: url("../../app/img/logo.png") no-repeat;
+  background-size: cover;
+  width: 92px;
+  height: 34px; }
+
+.main-card {
+  display: flex; }
+  .main-card__left {
+    width: 326px; }
+  .main-card__right {
+    width: calc(100% - 326px); }
+
+.menu {
+  background-color: #1f2229; }
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175px; }
+  .menu__item {
+    display: block;
+    background-color: #191c24;
+    padding: 20px 0 20px 30px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #808592;
+    transition: all ease-in-out .15s; }
+    .menu__item--exit {
+      border-top: solid 2px #20232b; }
+    .menu__item:hover {
+      opacity: 0.5;
+      transition: all ease-in-out .15s; }
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; }
+  .menu-list__link {
+    padding: 20px 0 20px 30px;
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700; }
+    .menu-list__link:hover {
+      background-color: #2a2d37; }
+    .menu-list__link--active {
+      background-color: #2a2d37;
+      color: #808592; }
+
+.card__wrapper {
+  padding: 0 30px; }
+
+.card__header {
+  background-color: #00aeef;
+  padding-top: 50px;
+  height: calc(175px - 50px);
+  font-family: "Open Sans",sans-serif;
+  color: #193945; }
+  .card__header h1 {
+    font-size: 35px;
+    font-weight: 700; }
+
+.card__text {
+  font-size: 14px; }
+
+.card__body {
+  background-color: #f7f8f8; }
+
+.card__footer {
+  background-color: #373c43; }
+  .card__footer p {
+    color: #7f8591;
+    font-size: 12px;
+    padding: 5px 0; }
+
+.bank-card {
+  width: 350px;
+  border: solid 1px #e4e9ee;
+  border-radius: 5px;
+  background-color: #f7f8f8;
+  z-index: 10; }
+  .bank-card__inner {
+    padding: 20px 20px 12px 15px; }
+  .bank-card__wrapper {
+    display: flex; }
+  .bank-card--right {
+    margin-left: -155px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    z-index: 5; }
+  .bank-card__line {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 45px;
+    background-color: #bec6cf; }
+
+.bank-cards {
+  padding-bottom: 50px; }
+  .bank-cards__title {
+    font-family: "Open Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 25px; }
+
+.payment-info__text {
+  color: #bec6cf;
+  font-size: 16px; }
+  .payment-info__text--black {
+    color: #101114; }
+
+.payment-data {
+  max-width: 290px;
+  padding-top: 45px;
+  padding-bottom: 35px; }
+  .payment-data__table {
+    padding-top: 25px; }
+  .payment-data__row {
+    display: flex;
+    padding-bottom: 12px; }
+    .payment-data__row:last-child {
+      padding-bottom: 0; }
+  .payment-data__col {
+    width: 50%; }
+
+.bank-card-form__row {
+  margin-bottom: 15px; }
+
+.bank-card-form__row-code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.bank-card-form__name {
+  padding-bottom: 5px; }
+
+.bank-card-form__input-row {
+  display: flex; }
+
+.bank-card-form__input--small {
+  width: 65px;
+  margin-right: 10px; }
+  .bank-card-form__input--small:last-child {
+    margin-right: 0; }
+
+.bank-card-form__input--large {
+  width: 140px; }
+
+.bank-card-form__select-row {
+  display: flex;
+  margin-bottom: 12px; }
+
+.bank-card-form__select-item-month {
+  position: relative;
+  width: 68px;
+  margin-right: 9px; }
+
+.bank-card-form__select-item-year {
+  position: relative;
+  width: 84px; }
+
+.input {
+  box-sizing: border-box;
+  border: solid 1px #e4e9ee;
+  padding: 10px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #101114;
+  width: 100%; }
+
+.select__native {
+  display: none; }
+
+.select__value {
+  display: block;
+  font-size: 16px;
+  color: #101114;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #e4e9ee;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box; }
+  .select__value:after {
+    content: '';
+    background: url("../../app/img/arrow.png") no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 9px;
+    top: calc(50% - 4px);
+    transition: all ease-in-out .15s; }
+  .select__value--open {
+    border-bottom: 1px solid #e4e9ee; }
+    .select__value--open:after {
+      transform: rotate(180deg);
+      transition: all ease-in-out .15s; }
+
+.select__options {
+  position: absolute;
+  display: none;
+  border-right: 1px solid #e4e9ee;
+  border-left: 1px solid #e4e9ee;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .select__options--open {
+    display: block;
+    width: 100%;
+    border-top: 0;
+    z-index: 10; }
+
+.select__item {
+  background-color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: solid 1px #e4e9ee; }
+  .select__item:hover {
+    background-color: #f1f1f1; }
+
+.select__value--open + .select__options {
+  border-top: 0; }
+
+body {
+  background-color: #101114;
+  font-family: 'Arial', sans-serif; }

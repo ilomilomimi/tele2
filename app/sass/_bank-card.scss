@@ -1,0 +1,40 @@
+.bank-card {
+  width: 350px;
+  border: solid 1px $grey-input;
+  border-radius: 5px;
+  background-color: $white-dark;
+  z-index: 10;
+
+  &__inner {
+    padding: 20px 20px 12px 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &--right {
+    margin-left: -155px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    z-index: 5;
+  }
+
+  &__line {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 45px;
+    background-color: $grey-text;
+  }
+
+}
+.bank-cards {
+  padding-bottom: 50px;
+
+  &__title {
+    font-family: "Open Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+}

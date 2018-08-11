@@ -1,0 +1,36 @@
+.card {
+
+  &__wrapper {
+    padding: 0 30px;
+  }
+
+  &__header {
+    background-color: $blue;
+    padding-top: 50px;
+    height: calc(175px - 50px);
+    font-family: "Open Sans",sans-serif;
+    color: $dark-blue;
+
+    h1 {
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    font-size: 14px;
+  }
+
+  &__body {
+    background-color: $white-dark;
+  }
+
+  &__footer {
+    background-color: $medium-blue;
+
+    p {
+      color: $navy-blue;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+  }
+}

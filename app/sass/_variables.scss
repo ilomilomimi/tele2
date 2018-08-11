@@ -1,0 +1,37 @@
+@font-face{
+  font-family: 'Arial';
+  src: url('../../app/fonts/Arial.ttf');
+  //src: url('../fonts/WebFont.eot?iefix') format('eot'),
+  //url('../fonts/WebFont.woff') format('woff'),
+  //url('../fonts/WebFont.ttf') format('truetype'),
+  //url('../fonts/WebFont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'OpenSans-Bold';
+  src: url('../../app/fonts/OpenSans-Bold.ttf');
+  //src: url('../fonts/WebFont.eot?iefix') format('eot'),
+  //url('../fonts/WebFont.woff') format('woff'),
+  //url('../fonts/WebFont.ttf') format('truetype'),
+  //url('../fonts/WebFont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$black: #101114;
+$white: #ffffff;
+$white-dark:#f7f8f8;
+$grey-item:#808592;
+$grey: #1f2229;
+$grey-light:#2a2d37;
+$grey-text:#bec6cf;
+$grey-input:#e4e9ee;
+$blue:#00aeef;
+$dark-blue:#193945;
+$medium-blue:#373c43;
+$navy-blue:#7f8591;
+$navy-blue-link:#808592;
+$blue-item:#191c24;

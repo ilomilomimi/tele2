@@ -1,0 +1,18 @@
+@import "normalize";
+@import "variables";
+@import "common";
+@import "logo";
+@import "main-card";
+@import "menu";
+@import "menu-list";
+@import "card";
+@import "bank-card";
+@import "payment-info";
+@import "bank-card-form";
+@import "input";
+@import "select";
+
+body {
+  background-color: $black;
+  font-family: 'Arial', sans-serif;
+}

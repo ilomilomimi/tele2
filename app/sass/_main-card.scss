@@ -1,0 +1,10 @@
+.main-card {
+  display: flex;
+
+  &__left {
+    width: 326px;
+  }
+  &__right {
+    width: calc(100% - 326px)
+  }
+}
