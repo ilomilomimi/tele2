@@ -4,10 +4,23 @@ $(function () {
         const selectNative = $(selectEl).find('.select__native');
         const valueDom = $(selectEl).find('.select__value');
 
-        valueDom.on('click', function () {
+        valueDom.on('click', function (event) {
             selectOptions.toggleClass('select__options--open');
-            $(this).toggleClass('select__value--open');
+            valueDom.toggleClass('select__value--open');
+
+            if (valueDom.hasClass('select__value--open')) {
+                event.stopPropagation();
+                $(document).on('click', clickOutsideDropdown);
+            }
         });
+
+        function clickOutsideDropdown(event) {
+            if (!$(event.target).closest(valueDom).length) {
+                valueDom.removeClass('select__value--open');
+                selectOptions.removeClass('select__options--open');
+                $(document).off('click', clickOutsideDropdown);
+            }
+        }
 
         $(selectEl).find('.select__native option').each(function (optionIndex, optionEl) {
             const optionValue = $(optionEl).val();
