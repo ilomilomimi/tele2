@@ -99,16 +99,16 @@
                                                         </div>
                                                         <div class="bank-card-form__input-row">
                                                             <div class="bank-card-form__input bank-card-form__input--small">
-                                                                <input class="input" name="card-number-chunk-1" required>
+                                                                <input class="input bank-card-form__card-number-chunk" name="card-number-chunk-1" required>
                                                             </div>
                                                             <div class="bank-card-form__input bank-card-form__input--small">
-                                                                <input class="input" name="card-number-chunk-2" required>
+                                                                <input class="input bank-card-form__card-number-chunk" name="card-number-chunk-2" required>
                                                             </div>
                                                             <div class="bank-card-form__input bank-card-form__input--small">
-                                                                <input class="input" name="card-number-chunk-3" required>
+                                                                <input class="input bank-card-form__card-number-chunk" name="card-number-chunk-3" required>
                                                             </div>
                                                             <div class="bank-card-form__input bank-card-form__input--small">
-                                                                <input class="input" name="card-number-chunk-4" required>
+                                                                <input class="input bank-card-form__card-number-chunk" name="card-number-chunk-4" required>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -121,7 +121,7 @@
                                                         <div class="bank-card-form__select-row">
                                                             <div class="bank-card-form__select-item-month">
                                                                 <div class="select">
-                                                                    <select class="select__native">
+                                                                    <select class="select__native" name="card-expire-month">
                                                                         <option value="01">01</option>
                                                                         <option value="02">02</option>
                                                                         <option value="03">03</option>
@@ -141,7 +141,7 @@
                                                             </div>
                                                             <div class="bank-card-form__select-item-year">
                                                                 <div class="select">
-                                                                    <select class="select__native">
+                                                                    <select class="select__native" name="card-expire-year">
                                                                         <option value="2018">2018</option>
                                                                         <option value="2019">2019</option>
                                                                         <option value="2020">2020</option>
@@ -155,7 +155,6 @@
                                                                         <option value="2028">2028</option>
                                                                         <option value="2029">2029</option>
                                                                         <option value="2030">2030</option>
-
                                                                     </select>
                                                                     <div class="select__value"></div>
                                                                     <div class="select__options"></div>
@@ -168,7 +167,7 @@
                                                     </div>
                                                     <div class="bank-card-form__row">
                                                         <div class="bank-card-form__input">
-                                                            <input class="input" name="card-name" placeholder="Держатель карты" required>
+                                                            <input class="input bank-card-form__card-holder" name="card-name" placeholder="Держатель карты" required>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -186,7 +185,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="bank-card-form__input bank-card-form__input--large">
-                                                            <input class="input" name="card-cvc" required>
+                                                            <input type="password" class="input bank-card-form__card-cvc" name="card-cvc" required>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -225,6 +224,6 @@
     <script src="../app/js/vendor/jquery-3.3.1.min.js"></script>
     <script src="../app/js/vendor/select.js"></script>
 
-    <script src="../app/js/main.js"></script>
+    <script src="../app/js/credit-card.js"></script>
 </body>
 </html>
